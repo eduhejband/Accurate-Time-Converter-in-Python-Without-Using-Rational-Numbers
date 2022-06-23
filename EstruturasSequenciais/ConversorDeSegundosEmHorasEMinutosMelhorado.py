@@ -3,7 +3,7 @@ def DefinaNome():
     while not Flag:
         try:
             x = int(input("Digite a quantidade de segundos\n"))
-            trn = x
+          
 
 
             y = (x/(60*60))
@@ -18,7 +18,7 @@ def DefinaNome():
             
             zzzz= (6000*(zzz))/100
 
-            if(x<3600):
+            if(x < 3600):
                 i = 0
                 print ("Valor em  {} horas  {} minutos e {} segundos ".format(i, int(round(zz,0)),int(round(zzzz,0))))
             elif (zz >59):
