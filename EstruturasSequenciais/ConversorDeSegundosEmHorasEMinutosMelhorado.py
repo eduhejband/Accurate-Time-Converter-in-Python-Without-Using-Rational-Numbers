@@ -1,11 +1,11 @@
+from math import floor
+from math import ceil
 def DefinaNome():
     Flag = False
     while not Flag:
         try:
             x = int(input("Digite a quantidade de segundos\n"))
-          
-
-
+        
             y = (x/(60*60))
 
             yy = round(y, 0)
@@ -18,17 +18,18 @@ def DefinaNome():
             
             zzzz= (6000*(zzz))/100
 
+            
             if(x < 3600):
                 i = 0
-                print ("Valor em  {} horas  {} minutos e {} segundos ".format(i, int(round(zz,0)),int(round(zzzz,0))))
+                print ("Valor em  {} horas  {} minutos e {} segundos ".format(i, int(floor(zz)),int(ceil(zzzz))))
             elif (zz >59):
                 i = 0
-                print ("Valor em  {} horas  {} minutos e {} segundos ".format(int(round(y,0)),i,int(round(zzzz,0))))
+                print ("Valor em  {} horas  {} minutos e {} segundos ".format(int(floor(y)),i,int(ceil(zzzz))))
             elif (zzzz >59):
                 i = 0
-                print ("Valor em  {} horas  {} minutos e {} segundos ".format(int(round(y,0)), int(round(zz,0)),i))
+                print ("Valor em  {} horas  {} minutos e {} segundos ".format(int(floor(y)), int(floor(zz)),i))
             else:
-                print ("Valor em  {} horas  {} minutos e {} segundos ".format(int(round(y,0)), int(round(zz,0)),int(round(zzzz,0))))
+                print ("Valor em  {} horas  {} minutos e {} segundos ".format(int(floor(y)), int(floor(zz)),int(floor(zzzz))))
             Flag = True
         
         
