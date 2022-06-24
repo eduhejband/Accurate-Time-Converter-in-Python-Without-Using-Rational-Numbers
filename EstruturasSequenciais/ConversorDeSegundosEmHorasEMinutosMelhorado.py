@@ -40,6 +40,9 @@ def DefinaNome():
             else:
                 print ("Valor em  {} horas  {} minutos e {} segundos ".format(int(floor(y)), int(floor(zz)),int(round(zzzz))))
             Flag = True
+            print("____________________________________________________")
+            print ("\n\n\n\n\n")
+            return DefinaNome()
         
         
         except(ValueError):
