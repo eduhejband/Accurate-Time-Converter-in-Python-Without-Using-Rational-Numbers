@@ -1,5 +1,5 @@
 from math import floor
-from math import ceil
+
 def DefinaNome():
     Flag = False
     while not Flag:
@@ -21,15 +21,24 @@ def DefinaNome():
             
             if(x < 3600):
                 i = 0
-                print ("Valor em  {} horas  {} minutos e {} segundos ".format(i, int(floor(zz)),int(ceil(zzzz))))
-            elif (zz >59):
+                print ("Valor em  {} horas  {} minutos e {} segundos ".format(i, int(floor(zz)),int(round(zzzz))))
+            elif (floor(zz) >59.9):
                 i = 0
-                print ("Valor em  {} horas  {} minutos e {} segundos ".format(int(floor(y)),i,int(ceil(zzzz))))
-            elif (zzzz >59):
+                print ("Valor em  {} horas  {} minutos e {} segundos ".format(int(floor(y)),i,int(round(zzzz))))
+            elif (floor(zzzz) >59.9):
                 i = 0
                 print ("Valor em  {} horas  {} minutos e {} segundos ".format(int(floor(y)), int(floor(zz)),i))
+            
+            elif(x<3600) and (floor(zz)>59.9):
+                i = 0
+                print ("Valor em  {} horas  {} minutos e {} segundos ".format(i, i,int(round(zzzz))))
+                
+            elif(x<3600) and (floor(zzzz)>59.9):
+                i = 0
+                print ("Valor em  {} horas  {} minutos e {} segundos ".format(i, int(floor(zz)),i))
+            
             else:
-                print ("Valor em  {} horas  {} minutos e {} segundos ".format(int(floor(y)), int(floor(zz)),int(floor(zzzz))))
+                print ("Valor em  {} horas  {} minutos e {} segundos ".format(int(floor(y)), int(floor(zz)),int(round(zzzz))))
             Flag = True
         
         
