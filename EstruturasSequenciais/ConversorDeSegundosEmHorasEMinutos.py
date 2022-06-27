@@ -1,6 +1,6 @@
 from math import floor
 
-def DefinaNome():
+def DefinaHoras():
     Flag = False
     while not Flag:
         try:
@@ -42,11 +42,11 @@ def DefinaNome():
             Flag = True
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return DefinaNome()
+            return DefinaHoras()
         
         
         except(ValueError):
             print("\n\n\nDigite apenas números\n\n\n\n\n\n")
             exit()
             
-DefinaNome()
+DefinaHoras()
