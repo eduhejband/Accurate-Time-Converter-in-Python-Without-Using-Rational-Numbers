@@ -1,6 +1,6 @@
 from math import floor
 
-def DefinaDia():
+def DefinaSegs():
     Flag = False
     while not Flag:
         try:
@@ -23,11 +23,11 @@ def DefinaDia():
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return DefinaDia()
+            return DefinaSegs()
         
         
         except(ValueError):
             print("\n\n\nDigite apenas números\n\n\n\n\n\n")
             exit()
             
-DefinaDia()
+DefinaSegs()
