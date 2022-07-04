@@ -846,7 +846,7 @@ def Chamamento():
             
             print("________________________")
 
-            print("1 - Segundos -> Ano")
+            print("\n\n 1 - Segundos -> Ano")
 
             print ("\n\n2 - Segundos -> Mês\n\n")
 
