@@ -6,7 +6,7 @@ def DefinaAno():
     while not Flag:
         try:
         
-            segundosT = int(input("Digite a quantidade de segundos\n"))
+            segundosT = int(input(" Digite a quantidade de segundos\n"))
             
             ano = int(segundosT/(86400*30.396473*12))
             segundosRest = segundosT%(86400*30.396473*12)
@@ -25,19 +25,19 @@ def DefinaAno():
             segundos = segundosRest3%60
             segundos = int(segundos)
             
-            print ("Valor em {} anos {} meses {} dias {} horas  {} minutos e {} segundos ".format(ceil(ano),int(mes),dias,horas,minutos,segundos))
+            print (" Valor em {} anos {} meses {} dias {} horas  {} minutos e {} segundos ".format(ceil(ano),int(mes),dias,horas,minutos,segundos))
             Flag = True
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaAno()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
 
 
 
@@ -46,7 +46,7 @@ def DefinaMes():
     while not Flag:
         try:
         
-            segundosT = int(input("Digite a quantidade de segundos\n"))
+            segundosT = int(input(" Digite a quantidade de segundos\n"))
             
             mes = int(segundosT/(86400*30.396473))
             segundosRest = segundosT%(86400*30.396473)
@@ -62,19 +62,19 @@ def DefinaMes():
             segundos = segundosRest2%60
             segundos = int(segundos)
             
-            print ("Valor em {} meses {} dias {} horas  {} minutos e {} segundos ".format(int(mes),dias,horas,minutos,segundos))
+            print (" Valor em {} meses {} dias {} horas  {} minutos e {} segundos ".format(int(mes),dias,horas,minutos,segundos))
             Flag = True
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaMes()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
 
 
 
@@ -83,7 +83,7 @@ def DefinaDia():
     while not Flag:
         try:
         
-            segundosT = int(input("Digite a quantidade de segundos\n"))
+            segundosT = int(input(" Digite a quantidade de segundos\n"))
   
             dias = int(segundosT/86400)
             segundosRest = segundosT%86400
@@ -95,19 +95,19 @@ def DefinaDia():
             segundos = segundosRest1%60
             segundos = int(segundos)
             
-            print ("Valor em {} dias {} horas  {} minutos e {} segundos ".format(dias,horas,minutos,segundos))
+            print (" Valor em {} dias {} horas  {} minutos e {} segundos ".format(dias,horas,minutos,segundos))
             Flag = True
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaDia()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
 
 
 
@@ -116,7 +116,7 @@ def DefinaHoras():
     while not Flag:
         try:
         
-            segundosT = int(input("Digite a quantidade de segundos\n"))
+            segundosT = int(input(" Digite a quantidade de segundos\n"))
   
  
             
@@ -127,15 +127,15 @@ def DefinaHoras():
             segundos = segundosRest1%60
             segundos = int(segundos)
             
-            print ("Valor em  {} horas  {} minutos e {} segundos ".format(horas,minutos,segundos))
+            print (" Valor em  {} horas  {} minutos e {} segundos ".format(horas,minutos,segundos))
             Flag = True
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaHoras()
             
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
             
 def DefinaSegsMin():
@@ -143,7 +143,7 @@ def DefinaSegsMin():
     while not Flag:
         try:
         
-            segundosT = int(input("Digite a quantidade de segundos\n"))
+            segundosT = int(input(" Digite a quantidade de segundos\n"))
   
  
             
@@ -151,7 +151,7 @@ def DefinaSegsMin():
             segundosRest1 = segundosT%60
             segundos = int(segundosRest1)
             
-            print ("Valor em  {} minutos e {} segundos ".format(minutos,segundos))
+            print (" Valor em  {} minutos e {} segundos ".format(minutos,segundos))
             Flag = True
            
             
@@ -159,15 +159,15 @@ def DefinaSegsMin():
             print("____________________________________________________")
             print ("\n\n\n\n\n")
             
-            return Chamamento()
+            return DefinaSegsMin()
         
         
       
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
 
 
@@ -176,7 +176,7 @@ def DefinaMin():
     while not Flag:
         try:
         
-            minutosT = int(input("Digite a quantidade de Minutos\n"))
+            minutosT = int(input(" Digite a quantidade de Minutos\n"))
   
  
 
@@ -188,19 +188,19 @@ def DefinaMin():
             minutos = int(minutos)
     
  
-            print ("Valor em  {} horas  {} minutos ".format(horas,minutos))
+            print (" Valor em  {} horas  {} minutos ".format(horas,minutos))
             Flag = True
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaMin()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
 
 
 
@@ -209,7 +209,7 @@ def DefinaMinD():
     while not Flag:
         try:
         
-            minutosT = int(input("Digite a quantidade de minutos\n"))
+            minutosT = int(input(" Digite a quantidade de minutos\n"))
   
             dias = int(minutosT/1440)
             minutosRest = minutosT%1440
@@ -221,19 +221,19 @@ def DefinaMinD():
             minutos = minutosRest1%60
             minutos = int(minutos)
             
-            print ("Valor em {} dias {} horas e {} minutos".format(dias,horas,minutos))
+            print (" Valor em {} dias {} horas e {} minutos".format(dias,horas,minutos))
             Flag = True
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaMinD()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
 
 
@@ -243,7 +243,7 @@ def DefinaMinM():
     while not Flag:
         try:
         
-            minutosT = int(input("Digite a quantidade de minutos\n"))
+            minutosT = int(input(" Digite a quantidade de minutos\n"))
             
             
             
@@ -260,19 +260,19 @@ def DefinaMinM():
             minutos = minutosRest2%60
             minutos = int(minutos)
             
-            print ("Valor em {} meses {} dias {} horas e {} minutos".format(meses,dias,horas,minutos))
+            print (" Valor em {} meses {} dias {} horas e {} minutos".format(meses,dias,horas,minutos))
             Flag = True
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaMinM()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
 
 
 
@@ -281,7 +281,7 @@ def DefinaMinA():
     while not Flag:
         try:
         
-            minutosT = int(input("Digite a quantidade de minutos\n"))
+            minutosT = int(input(" Digite a quantidade de minutos\n"))
             
             ano = int(minutosT/(1440*30.396473*12))
             minutosRest = minutosT%(1440*30.396473*12)
@@ -299,19 +299,19 @@ def DefinaMinA():
             minutos = minutosRest3%60
             minutos = int(minutos)
             
-            print ("Valor em {} anos {} meses {} dias {} horas e {} minutos".format(ano,meses,dias,horas,minutos))
+            print (" Valor em {} anos {} meses {} dias {} horas e {} minutos".format(ano,meses,dias,horas,minutos))
             Flag = True
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaMinA()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
 
 
 def DefinaHoraAno():
@@ -319,7 +319,7 @@ def DefinaHoraAno():
     while not Flag:
         try:
         
-            horasT = int(input("Digite a quantidade de horas\n"))
+            horasT = int(input(" Digite a quantidade de horas\n"))
             
             ano = int(horasT/(24*30.396473*12))
             horasRest = horasT%(24*30.396473*12)
@@ -333,19 +333,19 @@ def DefinaHoraAno():
             horas = int(horasRest2%60)
             
             
-            print ("Valor em {} anos {} meses {} dias e {} horas ".format(ano,meses,dias,horas))
+            print (" Valor em {} anos {} meses {} dias e {} horas ".format(ano,meses,dias,horas))
             Flag = True
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaHoraAno()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            return exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
 
 
@@ -354,7 +354,7 @@ def DefinaHoraMes():
     while not Flag:
         try:
         
-            horasT = int(input("Digite a quantidade de horas\n"))
+            horasT = int(input(" Digite a quantidade de horas\n"))
             
             
             
@@ -366,17 +366,17 @@ def DefinaHoraMes():
             
             horas = int(horasRest2%60)
             
-            print ("Valor em {} meses {} dias e {} horas ".format(meses,dias,horas))
+            print (" Valor em {} meses {} dias e {} horas ".format(meses,dias,horas))
             Flag = True
            
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaHoraMes()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            return exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
             
 def DefinaHoraDia():
@@ -384,24 +384,24 @@ def DefinaHoraDia():
     while not Flag:
         try:
         
-            horasT = int(input("Digite a quantidade de horas\n"))
+            horasT = int(input(" Digite a quantidade de horas\n"))
             
             dias = int(horasT/24)
             horasRest2 = horasT%24
             
             horas = int(horasRest2%24)
             
-            print ("Valor em {} dias e {} horas ".format(dias,horas))
+            print (" Valor em {} dias e {} horas ".format(dias,horas))
             Flag = True
            
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaHoraDia()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            return exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
    
             
 def DefinaDiaToAnos():
@@ -409,7 +409,7 @@ def DefinaDiaToAnos():
     while not Flag:
         try:
         
-            diasT = int(input("Digite a quantidade de dias\n"))
+            diasT = int(input(" Digite a quantidade de dias\n"))
             
             
             
@@ -423,24 +423,24 @@ def DefinaDiaToAnos():
             
             
             
-            print ("Valor em {} anos {} meses {} dias ".format(int(ano),meses, int(dias)))
+            print (" Valor em {} anos {} meses {} dias ".format(int(ano),meses, int(dias)))
             Flag = True
            
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaDiaToAnos()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            return exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
 def DefinaDiaToMeses():
     Flag = False
     while not Flag:
         try:
         
-            diasT = int(input("Digite a quantidade de dias\n"))
+            diasT = int(input(" Digite a quantidade de dias\n"))
             
             
             meses = int(diasT/30.396473)
@@ -450,17 +450,17 @@ def DefinaDiaToMeses():
             
             
             
-            print ("Valor em {} meses {} dias ".format(int(meses), int(dias)))
+            print (" Valor em {} meses {} dias ".format(int(meses), int(dias)))
             Flag = True
            
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaDiaToMeses()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            return exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
   
             
 def DefinaMesesAno():
@@ -468,7 +468,7 @@ def DefinaMesesAno():
     while not Flag:
         try:
         
-            mesesT = int(input("Digite a quantidade de meses\n"))
+            mesesT = int(input(" Digite a quantidade de meses\n"))
             
             ano = (mesesT/12)
             mesesRest = mesesT%12
@@ -476,17 +476,17 @@ def DefinaMesesAno():
             anos = int(ano)
             meses = int(mesesT)
             
-            print ("Valor em {} anos e {} meses ".format(anos,meses))
+            print (" Valor em {} anos e {} meses ".format(anos,meses))
             Flag = True
            
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaMesesAno()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            return exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
             
 def DefinaAnoToMeses():
@@ -494,23 +494,23 @@ def DefinaAnoToMeses():
     while not Flag:
         try:
         
-            anosT = int(input("Digite a quantidade de anos\n"))
+            anosT = int(input(" Digite a quantidade de anos\n"))
             
             mes = int(anosT*12)
            
             
-            print ("Valor {} meses ".format(int(mes)))
+            print (" Valor {} meses ".format(int(mes)))
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaAnoToMeses()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
             
             
@@ -519,23 +519,23 @@ def DefinaAnoToDias():
     while not Flag:
         try:
         
-            anosT = int(input("Digite a quantidade de anos\n"))
+            anosT = int(input(" Digite a quantidade de anos\n"))
             
             dia = int(anosT*12*30.396473)
            
             
-            print ("Valor {} dias ".format(int(dia)))
+            print (" Valor {} dias ".format(int(dia)))
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaAnoToDias()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
 
 
@@ -544,23 +544,23 @@ def DefinaAnoToHoras():
     while not Flag:
         try:
         
-            anosT = int(input("Digite a quantidade de anos\n"))
+            anosT = int(input(" Digite a quantidade de anos\n"))
             
             hora = int(anosT*12*30.396473*24)
            
             
-            print ("Valor {} horas ".format(int(hora)))
+            print (" Valor {} horas ".format(int(hora)))
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaAnoToHoras()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
 
 
@@ -569,23 +569,23 @@ def DefinaAnoToMin():
     while not Flag:
         try:
         
-            anosT = int(input("Digite a quantidade de anos\n"))
+            anosT = int(input(" Digite a quantidade de anos\n"))
             
             minute = int(anosT*12*30.396473*24*60)
            
             
-            print ("Valor {} minutos ".format(int(minute)))
+            print (" Valor {} minutos ".format(int(minute)))
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaAnoToMin()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
 
 
             
@@ -594,23 +594,23 @@ def DefinaAnoToSegs():
     while not Flag:
         try:
         
-            anosT = int(input("Digite a quantidade de anos\n"))
+            anosT = int(input(" Digite a quantidade de anos\n"))
             
             segs = int(anosT*12*30.396473*24*60*60)
            
             
-            print ("Valor {} segundos ".format(int(segs)))
+            print (" Valor {} segundos ".format(int(segs)))
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaAnoToSegs()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
             
             
@@ -619,22 +619,22 @@ def DefinaMesToDias():
     while not Flag:
         try:
         
-            mesesT = int(input("Digite a quantidade de meses\n"))
+            mesesT = int(input(" Digite a quantidade de meses\n"))
             
             dias = int(mesesT*30.396473)
            
-            print ("Valor {} dias ".format(int(dias)))
+            print (" Valor {} dias ".format(int(dias)))
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaMesToDias()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
             
             
@@ -643,22 +643,22 @@ def DefinaMesToHoras():
     while not Flag:
         try:
         
-            mesesT = int(input("Digite a quantidade de meses\n"))
+            mesesT = int(input(" Digite a quantidade de meses\n"))
             
             horas = int(mesesT*30.396473*24)
            
-            print ("Valor {} horas ".format(int(horas)))
+            print (" Valor {} horas ".format(int(horas)))
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaMesToHoras()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
 
             
 def DefinaMesToMin():
@@ -666,22 +666,22 @@ def DefinaMesToMin():
     while not Flag:
         try:
         
-            mesesT = int(input("Digite a quantidade de meses\n"))
+            mesesT = int(input(" Digite a quantidade de meses\n"))
             
             minutes = int(mesesT*30.396473*24*60)
            
-            print ("Valor {} minutos ".format(int(minutes)))
+            print (" Valor {} minutos ".format(int(minutes)))
            
             
             
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaMesToMin()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
 
 def DefinaMesToSegs():
@@ -689,20 +689,20 @@ def DefinaMesToSegs():
     while not Flag:
         try:
         
-            mesesT = int(input("Digite a quantidade de meses\n"))
+            mesesT = int(input(" Digite a quantidade de meses\n"))
             
             segs = int(mesesT*30.396473*24*60*60)
            
-            print ("Valor {} segundos ".format(int(segs)))
+            print (" Valor {} segundos ".format(int(segs)))
            
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaMesToSegs()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
      
             
 def DefinaDiaToHoras():
@@ -710,20 +710,20 @@ def DefinaDiaToHoras():
     while not Flag:
         try:
         
-            diasT = int(input("Digite a quantidade de dias\n"))
+            diasT = int(input(" Digite a quantidade de dias\n"))
             
             horas = int(diasT*24)
            
-            print ("Valor {} horas ".format(int(horas)))
+            print (" Valor {} horas ".format(int(horas)))
            
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaDiaToHoras()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
 
 
@@ -732,20 +732,20 @@ def DefinaDiaToMinutes():
     while not Flag:
         try:
         
-            diasT = int(input("Digite a quantidade de dias\n"))
+            diasT = int(input(" Digite a quantidade de dias\n"))
             
             minutes = int(diasT*24*60)
            
-            print ("Valor {} minutos ".format(int(minutes)))
+            print (" Valor {} minutos ".format(int(minutes)))
            
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaDiaToMinutes()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
 
 
 
@@ -754,20 +754,20 @@ def DefinaDiaToSegundos():
     while not Flag:
         try:
         
-            diasT = int(input("Digite a quantidade de dias\n"))
+            diasT = int(input(" Digite a quantidade de dias\n"))
             
             segundos = int(diasT*24*60*60)
            
-            print ("Valor {} segundos ".format(int(segundos)))
+            print (" Valor {} segundos ".format(int(segundos)))
            
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaDiaToSegundos()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
       
       
             
@@ -776,20 +776,20 @@ def DefinaHorasToMinutes():
     while not Flag:
         try:
         
-            horasT = int(input("Digite a quantidade de horas\n"))
+            horasT = int(input(" Digite a quantidade de horas\n"))
             
             minutos = int(horasT*60)
            
-            print ("Valor {} minutos ".format(int(minutos)))
+            print (" Valor {} minutos ".format(int(minutos)))
            
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaHorasToMinutes()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
 
 def DefinaHorasToSegundos():
@@ -797,20 +797,20 @@ def DefinaHorasToSegundos():
     while not Flag:
         try:
         
-            horasT = int(input("Digite a quantidade de horas\n"))
+            horasT = int(input(" Digite a quantidade de horas\n"))
             
             segundos = int(horasT*60*60)
            
-            print ("Valor {} segundos ".format(int(segundos)))
+            print (" Valor {} segundos ".format(int(segundos)))
            
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            return DefinaHorasToSegundos()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            return Chamamento()
             
 
 def DefinaMinToSegundos():
@@ -818,20 +818,22 @@ def DefinaMinToSegundos():
     while not Flag:
         try:
         
-            horasT = int(input("Digite a quantidade de minutos\n"))
+            horasT = int(input(" Digite a quantidade de minutos\n"))
             
             segundos = int(horasT*60)
            
-            print ("Valor {} segundos ".format(int(segundos)))
+            print (" Valor {} segundos ".format(int(segundos)))
            
             print("____________________________________________________")
             print ("\n\n\n\n\n")
-            return Chamamento()
+            
+            return DefinaMinToSegundos()
         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n")
+            
+            return Chamamento()
 
 def Chamamento():
     
@@ -840,7 +842,7 @@ def Chamamento():
         try:
             
         
-            print("Guia:\n")
+            print("  Guia:\n")
             
             print("-- Ordem Crescente--\n")
             
@@ -848,72 +850,74 @@ def Chamamento():
 
             print("\n\n 1 - Segundos -> Ano")
 
-            print ("\n\n2 - Segundos -> Mês\n\n")
+            print ("\n\n 2 - Segundos -> Mês\n\n")
 
-            print("3 - Segundos -> Dias\n\n") 
+            print(" 3 - Segundos -> Dias\n\n") 
 
-            print("4 - Segundos -> Horas\n\n")
+            print(" 4 - Segundos -> Horas\n\n")
 
-            print("5 - Segundos -> Minutos\n\n")
+            print(" 5 - Segundos -> Minutos\n\n")
 
-            print("6 - Minutos -> Horas\n\n")
+            print(" 6 - Minutos -> Horas\n\n")
 
-            print("7 - Minutos -> Dias\n\n")
+            print(" 7 - Minutos -> Dias\n\n")
 
-            print("8 - Minutos -> Meses\n\n")
+            print(" 8 - Minutos -> Meses\n\n")
 
-            print("9 - Minutos -> Ano\n\n")
+            print(" 9 - Minutos -> Ano\n\n")
 
-            print("10 - Horas -> Dias\n\n")
+            print(" 10 - Horas -> Dias\n\n")
 
-            print("11 - Horas -> Meses\n\n")
+            print(" 11 - Horas -> Meses\n\n")
 
-            print("12 - Horas -> Anos\n\n")
+            print(" 12 - Horas -> Anos\n\n")
 
-            print("13 - Dias -> Anos\n\n")
+            print(" 13 - Dias -> Anos\n\n")
 
-            print("14 - Dias -> Meses\n\n")
+            print(" 14 - Dias -> Meses\n\n")
 
-            print("15 - Meses -> Anos\n\n")
+            print(" 15 - Meses -> Anos\n\n")
             
             print("-- Ordem Decrescente--\n")
             
             print("________________________")
 
-            print("\n\n16 - Anos -> Meses\n\n")
+            print("\n\n 16 - Anos -> Meses\n\n")
 
-            print("17 - Anos -> Dias\n\n")
+            print(" 17 - Anos -> Dias\n\n")
 
-            print("18 - Anos -> Horas\n\n")
+            print(" 18 - Anos -> Horas\n\n")
 
-            print("19 - Anos -> Minutos\n\n")
+            print(" 19 - Anos -> Minutos\n\n")
 
-            print("20 - Anos -> Segundos\n\n")
+            print(" 20 - Anos -> Segundos\n\n")
 
-            print("21 - Meses -> Dias\n\n")
+            print(" 21 - Meses -> Dias\n\n")
 
-            print("22 - Meses -> Horas\n\n")
+            print(" 22 - Meses -> Horas\n\n")
 
-            print("23 - Meses -> Minutos\n\n")
+            print(" 23 - Meses -> Minutos\n\n")
 
-            print("24 - Meses -> Segundos\n\n")
+            print(" 24 - Meses -> Segundos\n\n")
 
-            print("25 - Dias -> Horas\n\n")
+            print(" 25 - Dias -> Horas\n\n")
 
-            print("26 - Dias -> Minutos\n\n")
+            print(" 26 - Dias -> Minutos\n\n")
 
-            print("27 - Dias -> Segundos\n\n")
+            print(" 27 - Dias -> Segundos\n\n")
 
-            print("28 - Horas -> Minutos\n\n")
+            print(" 28 - Horas -> Minutos\n\n")
 
-            print("29 - Horas -> Segundos\n\n")
+            print(" 29 - Horas -> Segundos\n\n")
 
-            print("30 - Minutos -> Segundos\n\n")
+            print(" 30 - Minutos -> Segundos\n\n")
+            
+            print(" Após ingressar em um conversor, para retornar ao início basta digitar qualquer caracter\n\n")
 
             print("_____________________________\n\n\n\n\n")
 
 
-            t = int(input("Digite o conversor escolhido\n"))
+            t = int(input(" Digite o conversor escolhido\n"))
 
             if (t==1):
                 print("\n\n\n\n\n")
@@ -1037,13 +1041,14 @@ def Chamamento():
                 DefinaMinToSegundos()
     
             else:
-                print("\n\n\n\n\n Digite um número válido\n\n\n\n\n")
+                print("\n\n\n\n\n Digite um número válido\n\n\n\n\n\n\n\n\n")
                 
                 return Chamamento()
                         
         
         except(ValueError):
-            print("\n\n\nDigite apenas números\n\n\n\n\n\n")
-            exit()
+            print("\n\n\n Digite apenas números\n\n\n\n\n\n\n\n\n\n")
+            return Chamamento()
             
+
 Chamamento()
