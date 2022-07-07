@@ -912,7 +912,7 @@ def Chamamento():
 
             print(" 30 - Minutos -> Segundos\n\n")
             
-            print(" Após ingressar em um conversor, para retornar ao início basta digitar qualquer caracter\n\n")
+            print(" Após ingressar em um conversor, para retornar ao início basta digitar qualquer letra\n\n")
 
             print("_____________________________\n\n\n\n\n")
 
