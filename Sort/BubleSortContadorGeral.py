@@ -36,4 +36,4 @@ list(lista)
 print ("Lista Ordenanda -> ",lista)
 print (perfi)
 print (perfj)
-print(perfi*perfj)
+print(perfi*perfj
