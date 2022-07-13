@@ -31,4 +31,4 @@ for i in range(qtd -1):
 list(lista)
 print ("Lista Ordenanda -> ",lista)
 print (perfi)  
-print(perfi*perfj
+print(perfi*perfj)
