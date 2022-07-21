@@ -70,7 +70,7 @@ def DefinaMes():
             print("____________________________________________________")
             print ("\n\n\n\n\n")
             return DefinaMes()
-        
+         
         
         except(ValueError):
             print("\n\n\n Digite apenas números\n\n\n\n\n\n")
@@ -500,7 +500,7 @@ def DefinaAnoToMeses():
            
             
             print (" Valor {} meses ".format(int(mes)))
-           
+            Flag = True
             
             
             print("____________________________________________________")
@@ -525,7 +525,7 @@ def DefinaAnoToDias():
            
             
             print (" Valor {} dias ".format(int(dia)))
-           
+            Flag = True
             
             
             print("____________________________________________________")
@@ -550,7 +550,7 @@ def DefinaAnoToHoras():
            
             
             print (" Valor {} horas ".format(int(hora)))
-           
+            Flag = True
             
             
             print("____________________________________________________")
@@ -575,7 +575,7 @@ def DefinaAnoToMin():
            
             
             print (" Valor {} minutos ".format(int(minute)))
-           
+            Flag = True
             
             
             print("____________________________________________________")
@@ -600,7 +600,7 @@ def DefinaAnoToSegs():
            
             
             print (" Valor {} segundos ".format(int(segs)))
-           
+            Flag = True
             
             
             print("____________________________________________________")
@@ -624,7 +624,7 @@ def DefinaMesToDias():
             dias = int(mesesT*30.396473)
            
             print (" Valor {} dias ".format(int(dias)))
-           
+            Flag = True
             
             
             print("____________________________________________________")
@@ -648,7 +648,7 @@ def DefinaMesToHoras():
             horas = int(mesesT*30.396473*24)
            
             print (" Valor {} horas ".format(int(horas)))
-           
+            Flag = True
             
             
             print("____________________________________________________")
@@ -671,7 +671,7 @@ def DefinaMesToMin():
             minutes = int(mesesT*30.396473*24*60)
            
             print (" Valor {} minutos ".format(int(minutes)))
-           
+            Flag = True
             
             
             print("____________________________________________________")
@@ -694,7 +694,7 @@ def DefinaMesToSegs():
             segs = int(mesesT*30.396473*24*60*60)
            
             print (" Valor {} segundos ".format(int(segs)))
-           
+            Flag = True
             print("____________________________________________________")
             print ("\n\n\n\n\n")
             return DefinaMesToSegs()
@@ -715,7 +715,7 @@ def DefinaDiaToHoras():
             horas = int(diasT*24)
            
             print (" Valor {} horas ".format(int(horas)))
-           
+            Flag = True
             print("____________________________________________________")
             print ("\n\n\n\n\n")
             return DefinaDiaToHoras()
@@ -737,7 +737,7 @@ def DefinaDiaToMinutes():
             minutes = int(diasT*24*60)
            
             print (" Valor {} minutos ".format(int(minutes)))
-           
+            Flag = True
             print("____________________________________________________")
             print ("\n\n\n\n\n")
             return DefinaDiaToMinutes()
@@ -759,7 +759,7 @@ def DefinaDiaToSegundos():
             segundos = int(diasT*24*60*60)
            
             print (" Valor {} segundos ".format(int(segundos)))
-           
+            Flag = True
             print("____________________________________________________")
             print ("\n\n\n\n\n")
             return DefinaDiaToSegundos()
@@ -781,7 +781,7 @@ def DefinaHorasToMinutes():
             minutos = int(horasT*60)
            
             print (" Valor {} minutos ".format(int(minutos)))
-           
+            Flag = True
             print("____________________________________________________")
             print ("\n\n\n\n\n")
             return DefinaHorasToMinutes()
@@ -802,7 +802,7 @@ def DefinaHorasToSegundos():
             segundos = int(horasT*60*60)
            
             print (" Valor {} segundos ".format(int(segundos)))
-           
+            Flag = True
             print("____________________________________________________")
             print ("\n\n\n\n\n")
             return DefinaHorasToSegundos()
@@ -823,7 +823,7 @@ def DefinaMinToSegundos():
             segundos = int(horasT*60)
            
             print (" Valor {} segundos ".format(int(segundos)))
-           
+            Flag = True
             print("____________________________________________________")
             print ("\n\n\n\n\n")
             
@@ -915,8 +915,9 @@ def Chamamento():
             print(" Após ingressar em um conversor, para retornar ao início basta digitar qualquer letra\n\n")
 
             print("_____________________________\n\n\n\n\n")
-
-
+            
+            Flag = True
+ 
             t = int(input(" Digite o conversor escolhido\n"))
 
             if (t==1):
