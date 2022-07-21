@@ -1042,7 +1042,7 @@ def Chamamento():
                 DefinaMinToSegundos()
     
             else:
-                print("\n\n\n\n\n Digite um número válido\n\n\n\n\n\n\n\n\n")
+                print("\n\n\n\n\n Digite um conversor válido\n\n\n\n\n\n\n\n\n")
                 
                 return Chamamento()
                         
